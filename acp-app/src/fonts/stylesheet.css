@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Cocogoose Pro';
+    src: url('CocogoosePro-ThinItalic.eot');
+    src: url('CocogoosePro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('CocogoosePro-ThinItalic.woff2') format('woff2'),
+        url('CocogoosePro-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cocogoose Pro SemiLight';
+    src: url('CocogoosePro-SemiLightItalic.eot');
+    src: url('CocogoosePro-SemiLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('CocogoosePro-SemiLightItalic.woff2') format('woff2'),
+        url('CocogoosePro-SemiLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'COCOGOOSE';
+    src: url('COCOGOOSE-DemiBold.eot');
+    src: url('COCOGOOSE-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('COCOGOOSE-DemiBold.woff2') format('woff2'),
+        url('COCOGOOSE-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cocogoose Pro';
+    src: url('CocogoosePro-Thin.eot');
+    src: url('CocogoosePro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('CocogoosePro-Thin.woff2') format('woff2'),
+        url('CocogoosePro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

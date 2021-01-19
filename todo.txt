@@ -1,0 +1,28 @@
+TODO
+
+Website Feedback
+- prescale images before putting it on the website
+- make it faster - may not run well on safari
+- work on front page thing to remove 'detail over detail'
+- add button click animation
+- apply page
+--bigger font size for committee
+--change committee card from rectangle columns to horizontal 'lines'
+--give a shadow to each committee card
+--put apply button in the initial loading page
+
+-overall do justification with icons
+-take out bold in body paragraphs
+-break up large bodies of text with line separation
+- test everything on different screen sizes
+-faces page
+--in caption, add an indent at the beginning
+--perhaps change faces to FoA
+--make subtitle caption bigger
+
+-people
+--add shadow border to member monday carousel
+--try nominate button in the middle
+
+-events
+--make margins of calendar the same as the rest of the website

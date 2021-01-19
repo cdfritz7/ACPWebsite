@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'Cocogoose Thin Italic';
+    src: url('../fonts/CocogoosePro-ThinItalic.eot');
+    src: url('../fonts/CocogoosePro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CocogoosePro-ThinItalic.woff2') format('woff2'),
+        url('../fonts/CocogoosePro-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cocogoose Italic';
+    src: url('../fonts/CocogoosePro-SemiLightItalic.eot');
+    src: url('../fonts/CocogoosePro-SemiLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CocogoosePro-SemiLightItalic.woff2') format('woff2'),
+        url('../fonts/CocogoosePro-SemiLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cocogoose Bold';
+    src: url('../fonts/COCOGOOSE-DemiBold.eot');
+    src: url('../fonts/COCOGOOSE-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/COCOGOOSE-DemiBold.woff2') format('woff2'),
+        url('../fonts/COCOGOOSE-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cocogoose Thin';
+    src: url('../fonts/CocogoosePro-Thin.eot');
+    src: url('../fonts/CocogoosePro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CocogoosePro-Thin.woff2') format('woff2'),
+        url('../fonts/CocogoosePro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+.text-24pt{
+  font-family: 'Cocogoose Bold', sans-serif;
+  font-size: 24pt;
+}
+
+.text-16pt{
+  font-family: 'Cocogoose Bold', sans-serif;
+  font-size: 16pt;
+}
+
+.green{
+  color: #32733d;
+}
+
+.light_blue{
+  color: #018DA8;
+}
+
+.yellow{
+  color: #FE8D3F;
+}
+
+.red{
+  color: #B32D2E;
+}
+
+.body-24pt{
+  font-family: 'Roboto', sans-serif;
+  font-weight:600;
+  font-size: 24pt;
+}
+
+.body-20pt{
+  font-family: 'Roboto', sans-serif;
+  font-weight:600;
+  font-size: 20pt;
+}
+
+.body-16pt{
+  font-family: 'Roboto', sans-serif;
+  font-weight:600;
+  font-size: 16pt;
+}
+
+.page-title{
+  width: 100%;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.centered-text{
+  margin: auto;
+  text-align:center;
+  width:50vw;
+  min-width:500px;
+}
+
+.blue-yellow-bar{
+  width:300px;
+  height:5px;
+  margin: auto;
+  background: linear-gradient(to right, #FE8D3F 50%, #018DA8 50% 100%);
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+.my-nav-link{
+  transition: .4s ease-in-out;
+  -webkit-transition: .4s ease-in-out; /* for Safari & Chrome */
+}
+
+.my-nav-link:link {
+  color: white;
+}
+
+.my-nav-link:visited {
+  color: white;
+}
+
+.my-nav-link:hover {
+  color: #FE8D3F !important;
+  text-decoration: underline !important;
+  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+}
+
+.zoom{
+  transition: .4s ease-in-out;
+  -webkit-transition: .4s ease-in-out;
+}
+
+.zoom:hover{
+  width: 100vw;
+  transform:scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.my-button{
+  margin-top:25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22pt;
+  font-weight: 600;
+}
+
+.my-button-md{
+  margin-top:25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16pt;
+  font-weight: 600;
+}
+
+.my-button-sm{
+  margin-top:25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14pt;
+  font-weight: 600;
+}
+
+.my-button-animation{
+  background-color: #018DA8;
+  color: white;
+  border-color: #018DA8;
+  border-radius: 10px;
+  border-width:5px;
+  padding: 10px 25px 10px 25px;
+  font-family: 'Roboto', sans-serif;
+  border-style: solid;
+  display: inline-block;
+  transition: .4s ease-in-out;
+  -webkit-transition: .4s ease-in-out;
+}
+
+.my-button-animation:link {
+  background-color: #018DA8;
+}
+
+.my-button-animation:visited {
+  background-color: #018DA8;
+}
+
+.my-button-animation:hover {
+  background-color: #FE8D3F;
+  color: #018DA8
+}
+
+.footer{
+  min-height: 120px;
+  height:10vh;
+  background-color: #015465; /*dark blue*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left{
+  color:white;
+  margin-left: 10vw;
+  min-width: 300px;
+  width: 20vw;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-top:20px;
+}
+
+.footer-right{
+  color:white;
+  margin-right:5vw;
+  font-size: .5em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.my-social-icon{
+  margin-left:20px;
+}

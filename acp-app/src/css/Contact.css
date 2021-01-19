@@ -1,0 +1,31 @@
+.contact-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  padding-top:50px;
+}
+
+.contact-column{
+  min-width: 600px;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-method{
+  padding-top:25px;
+}
+
+.contact-form-input{
+  display: inline;
+  width: 500px;
+  border-width:3px;
+  border-style:solid;
+  border-color:#018DA8;
+  border-radius:10px;
+}
+
+.contact-form-subtitle{
+  padding-top:25px;
+}

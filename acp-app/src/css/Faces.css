@@ -1,0 +1,48 @@
+.carousel-button{
+  background-color: #018DA8; /* blue */
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+.carousel-button:link {
+  background-color: #018DA8;
+}
+
+.carousel-button:visited {
+  background-color: #018DA8;
+}
+
+.carousel-button:hover {
+  background-color: #017287;
+}
+
+.video-card{
+  margin: auto;
+  width: 50vw;
+}
+
+.video-card-title{
+  font-family: 'Roboto', sans-serif;
+  font-weight:600;
+  font-size: 18pt;
+  text-align: center;
+}
+
+.video-card-video{
+  width: 100%;
+  height: 600px;
+}
+
+.video-card-caption{
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+  font-size: 16pt;
+  margin-bottom: 100px;
+}

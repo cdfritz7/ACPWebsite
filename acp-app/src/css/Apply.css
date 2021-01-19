@@ -1,0 +1,54 @@
+.committee-card{
+  border-radius: 5px;
+  border-width: 3px;
+  border-color: black;
+  width: 400px;
+  padding: 10px;
+  margin: 30px;
+}
+
+.committee-card-title{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight:600;
+  font-size: 18pt;
+  margin-bottom:10px;
+}
+
+.committee-card-body{
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+  font-size: 14pt;
+  margin-bottom:10px
+}
+
+.committee-card-looking{
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+  font-size: 14pt;
+}
+
+.committee-card-list{
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+  font-size: 14pt;
+}
+
+.apply-button{
+  text-align: center;
+  margin: auto;
+  font-size:14pt;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #018DA8; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -2em; /* Also needed for space (tweak if needed) */
+}

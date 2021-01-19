@@ -1,0 +1,47 @@
+.officer-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 60vw;
+  margin: auto;
+}
+
+.officer-card{
+  width: 400px;
+  text-align: center;
+  margin: 25px;
+}
+
+.officer-img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.56);
+  max-width: 400px;
+  margin-bottom:20px;
+}
+
+.nominate-modal{
+  margin:auto;
+}
+
+.nominate-form-input{
+  width:100%;
+  border-width:3px;
+  border-style:solid;
+  border-color:#018DA8;
+  border-radius:10px;
+}
+
+.nominate-form-subtitle{
+  padding-top:25px;
+}
+
+.nominate-title{
+  font-family: 'Roboto', sans-serif;
+  font-weight:600;
+  font-size: 24pt;
+}
+
+.nominate-body{
+  font-family: 'Roboto', sans-serif;
+  font-weight:500;
+  font-size: 18pt;
+}
