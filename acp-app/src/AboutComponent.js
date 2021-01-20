@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 
-import best_leadership from './imgs/best_leadership.svg';
-import best_new_organization from './imgs/best_new_organization.svg';
+import best_leadership from './imgs/best_leadership.png';
+import best_new_organization from './imgs/best_new_organization.png';
 
 class AwardComponent extends Component{
     constructor(props){

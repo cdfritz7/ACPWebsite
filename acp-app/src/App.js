@@ -22,7 +22,7 @@ import { SocialIcon } from 'react-social-icons';
 
 import "./css/App.css";
 
-import globe from './imgs/ACP-Globe.svg';
+import globe from './imgs/ACP-Globe.png';
 
 function App() {
   return (

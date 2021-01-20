@@ -2,8 +2,8 @@ import React, {Component} from "react"
 
 import './css/Home.css';
 
-import skyline from './imgs/skyline.svg';
-import title from './imgs/logo.svg';
+import skyline from './imgs/skyline.png';
+import title from './imgs/logo.png';
 
 function importAll(r) {
   return r.keys().map(r);
@@ -28,7 +28,7 @@ class HomeComponent extends Component{
       <div>
         <div style={{height:"100vh", position:"relative"}}>
           <img src={skyline} style={{opacity:0.5, width:"100vw", maxWidth:"100%", position:"absolute", left:"0", bottom:"0"}}/>
-          <img src={title} style={{width:"80vw", position:"absolute", top:"15vh", marginLeft:"auto", marginRight:"auto", left:"0", right:0, zIndex:1}} />
+          <img src={title} style={{width:"40vw", position:"absolute", top:"30vh", marginLeft:"auto", marginRight:"auto", left:"0", right:0, zIndex:1}} />
         </div>
 
         <p className="text-16pt" style={{maxWidth:"80vw", margin:"auto", paddingBottom:"20px"}}>

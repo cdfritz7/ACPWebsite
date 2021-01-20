@@ -66,15 +66,16 @@ class ApplyComponent extends Component{
             </div>
             <div className="committee-card-looking">
               Looking for someone who is
+              <div className="committee-card-list">
+                <ul>
+                  <li> Driven </li>
+                  <li> Confident </li>
+                  <li> A leader  </li>
+                  <li> Passionate </li>
+                </ul>
+              </div>
             </div>
-            <div className="committee-card-list">
-              <ul>
-                <li> Driven </li>
-                <li> Confident </li>
-                <li> A leader  </li>
-                <li> Passionate </li>
-              </ul>
-            </div>
+
             <div className="apply-button">
               <button
                 className="my-button-sm my-button-animation"
@@ -98,14 +99,14 @@ class ApplyComponent extends Component{
             </div>
             <div className="committee-card-looking">
               Looking for someone who is
-            </div>
-            <div className="committee-card-list">
-              <ul>
-                <li> CREATIVE, excited, passionate </li>
-                <li> Actively wanting to collaborate to create content </li>
-                <li> Skilled at graphic design, video production, design, photography  </li>
-                <li> Familiar with social media (Instagram, LinkedIn, Facebook) </li>
-              </ul>
+              <div className="committee-card-list">
+                <ul>
+                  <li> CREATIVE, excited, passionate </li>
+                  <li> Actively wanting to collaborate to create content </li>
+                  <li> Skilled at graphic design, video production, design, photography  </li>
+                  <li> Familiar with social media (Instagram, LinkedIn, Facebook) </li>
+                </ul>
+              </div>
             </div>
             <div className="apply-button">
               <button
@@ -129,13 +130,13 @@ class ApplyComponent extends Component{
             </div>
             <div className="committee-card-looking">
               Looking for someone who is
-            </div>
-            <div className="committee-card-list">
-              <ul>
-                <li> Organized </li>
-                <li> Proficient in excel, google forms and docs </li>
-                <li> Willing to communicate with anybody </li>
-              </ul>
+              <div className="committee-card-list">
+                <ul>
+                  <li> Organized </li>
+                  <li> Proficient in excel, google forms and docs </li>
+                  <li> Willing to communicate with anybody </li>
+                </ul>
+              </div>
             </div>
             <div className="apply-button">
               <button
@@ -158,15 +159,15 @@ class ApplyComponent extends Component{
             </div>
             <div className="committee-card-looking">
               Looking for someone who is
-            </div>
-            <div className="committee-card-list">
-              <ul>
-                <li> Passionate </li>
-                <li> Kind </li>
-                <li> Willing to put in time to go out of their way to help the
-                community (someone who will go the extra mile) </li>
-                <li> Organized/ a good planner </li>
-              </ul>
+              <div className="committee-card-list">
+                <ul>
+                  <li> Passionate </li>
+                  <li> Kind </li>
+                  <li> Willing to put in time to go out of their way to help the
+                  community (someone who will go the extra mile) </li>
+                  <li> Organized / a good planner </li>
+                </ul>
+              </div>
             </div>
             <div className="apply-button">
               <button
@@ -191,14 +192,14 @@ class ApplyComponent extends Component{
             </div>
             <div className="committee-card-looking">
               Looking for someone who is
-            </div>
-            <div className="committee-card-list">
-              <ul>
-                <li> Creative </li>
-                <li> Design oriented  </li>
-                <li> Skilled with Social Media </li>
-                <li> High confidence with communication skills </li>
-              </ul>
+              <div className="committee-card-list">
+                <ul>
+                  <li> Creative </li>
+                  <li> Design oriented  </li>
+                  <li> Skilled with Social Media </li>
+                  <li> High confidence with communication skills </li>
+                </ul>
+              </div>
             </div>
             <div className="apply-button">
               <button

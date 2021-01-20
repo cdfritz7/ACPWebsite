@@ -40,7 +40,7 @@ class PeopleComponent extends Component{
           <img
             src={member_monday_images[i]['default']}
             width="400px"
-            height="711px"
+            height="707px"
           />
         </Carousel.Item>,
       )

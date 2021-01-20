@@ -2,42 +2,54 @@
   border-radius: 5px;
   border-width: 3px;
   border-color: black;
-  width: 400px;
-  padding: 10px;
+  width: 60vw;
+  padding: 40px;
   margin: 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.16);
 }
 
 .committee-card-title{
-  text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight:600;
-  font-size: 18pt;
+  font-size: 22pt;
   margin-bottom:10px;
+  grid-column:1 / span 3;
+  grid-row: 1 / span 1;
 }
 
 .committee-card-body{
   font-family: 'Roboto', sans-serif;
   font-weight:400;
-  font-size: 14pt;
-  margin-bottom:10px
+  font-size: 18pt;
+  margin-bottom:10px;
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 1;
 }
 
 .committee-card-looking{
   font-family: 'Roboto', sans-serif;
   font-weight:400;
-  font-size: 14pt;
+  font-size: 18pt;
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 1;
 }
 
 .committee-card-list{
   font-family: 'Roboto', sans-serif;
   font-weight:400;
-  font-size: 14pt;
+  font-size: 18pt;
 }
 
 .apply-button{
-  text-align: center;
-  margin: auto;
   font-size:14pt;
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+  align-self: end;
+  justify-self: right;
 }
 
 ul {
@@ -50,5 +62,5 @@ ul li::before {
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -2em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
