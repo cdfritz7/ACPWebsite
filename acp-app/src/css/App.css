@@ -52,6 +52,11 @@
   font-size: 24pt;
 }
 
+.text-20pt{
+  font-family: 'Cocogoose Bold', sans-serif;
+  font-size: 20pt;
+}
+
 .text-16pt{
   font-family: 'Cocogoose Bold', sans-serif;
   font-size: 16pt;
@@ -75,19 +80,16 @@
 
 .body-24pt{
   font-family: 'Roboto', sans-serif;
-  font-weight:600;
   font-size: 24pt;
 }
 
 .body-20pt{
   font-family: 'Roboto', sans-serif;
-  font-weight:600;
   font-size: 20pt;
 }
 
 .body-16pt{
   font-family: 'Roboto', sans-serif;
-  font-weight:600;
   font-size: 16pt;
 }
 

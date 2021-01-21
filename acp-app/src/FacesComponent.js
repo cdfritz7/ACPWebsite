@@ -133,7 +133,7 @@ class FacesComponent extends Component{
            Faces of Austin
         </p>
         <div className="blue-yellow-bar"/>
-        <p className="text-16pt centered-text" style={{marginBottom:"50px", paddingTop:"15px"}}>
+        <p className="body-20pt centered-text" style={{marginBottom:"50px", paddingTop:"15px"}}>
            Faces of Austin is a mini documentary series put on by ACP members
            that spotlights different local businesses and the people working
            there around Austin. Check out some of our latest features!

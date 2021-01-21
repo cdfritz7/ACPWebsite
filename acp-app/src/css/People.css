@@ -32,6 +32,9 @@
 
 .nominate-form-subtitle{
   padding-top:25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight:600;
+  font-size: 18pt;
 }
 
 .nominate-title{
@@ -44,4 +47,10 @@
   font-family: 'Roboto', sans-serif;
   font-weight:500;
   font-size: 18pt;
+}
+
+.my-carousel{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.56);
+  margin:50px;
+  width:400px;
 }

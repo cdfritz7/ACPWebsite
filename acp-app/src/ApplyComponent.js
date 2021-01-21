@@ -13,7 +13,7 @@ class ApplyComponent extends Component{
            Apply to ACP
         </p>
         <div className="blue-yellow-bar"/>
-        <p className="text-16pt centered-text" style={{textAlign:"center", paddingTop:"15px"}}>
+        <p className="text-20pt centered-text" style={{textAlign:"center", paddingTop:"15px"}}>
            Want to join ACP? You can browse available positions here and submit your
            application!
         </p>
@@ -22,7 +22,7 @@ class ApplyComponent extends Component{
            General Member Application
         </p>
         <div className="blue-yellow-bar"/>
-        <p className="text-16pt centered-text" style={{paddingTop:"15px"}}>
+        <p className="body-16pt centered-text" style={{paddingTop:"15px"}}>
           Apply to be an ACP general member. A general member is someone who
           identifies as an active participant in the org. This is a low time
           commitment role and you can get as much out of it as you put in.
@@ -45,7 +45,7 @@ class ApplyComponent extends Component{
            ACP Committees
         </p>
         <div className="blue-yellow-bar"/>
-        <p className="text-16pt centered-text" style={{paddingTop:"15px"}}>
+        <p className="body-16pt centered-text" style={{paddingTop:"15px"}}>
           Here at ACP we have five committees that work together cohesively to keep
           Austin, Austin!  To join a committee you must first apply to be a general
           member. Here are some brief descriptions of what our committees do.

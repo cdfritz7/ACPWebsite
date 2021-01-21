@@ -5,6 +5,7 @@ import "./css/People.css";
 import Carousel from 'react-bootstrap/Carousel';
 import Modal from "react-bootstrap/Modal";
 
+//import all images from a directory
 function importAll(r) {
   return r.keys().map(r);
 }
@@ -55,31 +56,31 @@ class PeopleComponent extends Component{
         <div className="officer-container">
           <div className="officer-card">
             <img className="officer-img" src={require('./imgs/officers/presidents.JPG')['default']} />
-            <p className="body-24pt">Sophie and Ian Mitre, Co-Founders and Presidents</p>
+            <p className="text-20pt">Sophie and Ian Mitre, Co-Founders and Presidents</p>
           </div>
           <div className="officer-card">
             <img className="officer-img" src={require('./imgs/officers/hank_groberg.JPG')['default']} />
-            <p className="body-24pt">Hank Groberg, Creative Team</p>
+            <p className="text-20pt">Hank Groberg, Creative Team</p>
           </div>
           <div className="officer-card">
             <img className="officer-img" src={require('./imgs/officers/lauren_obrian.JPG')['default']} />
-            <p className="body-24pt">Lauren O'Brian, Communications</p>
+            <p className="text-20pt">Lauren O'Brian, Communications</p>
           </div>
           <div className="officer-card">
             <img className="officer-img" src={require('./imgs/officers/cecilia_bibbo.JPG')['default']} />
-            <p className="body-24pt">Cecilia Bibbo, Design and Merchandise</p>
+            <p className="text-20pt">Cecilia Bibbo, Design and Merchandise</p>
           </div>
           <div className="officer-card">
             <img className="officer-img" src={require('./imgs/officers/lily_jacaruso.JPG')['default']} />
-            <p className="body-24pt">Lily Jacaruso, Creative</p>
+            <p className="text-20pt">Lily Jacaruso, Creative</p>
           </div>
           <div className="officer-card">
             <img className="officer-img" src={require('./imgs/officers/thomas_pastilha.JPG')['default']} />
-            <p className="body-24pt">Thomas Pastilha, Management and Special Projects</p>
+            <p className="text-20pt">Thomas Pastilha, Management and Special Projects</p>
           </div>
           <div className="officer-card">
             <img className="officer-img" src={require('./imgs/officers/elaine_finney.JPG')['default']} />
-            <p className="body-24pt">Elaine Finney, Philanthropy</p>
+            <p className="text-20pt">Elaine Finney, Philanthropy</p>
           </div>
         </div>
 
@@ -126,22 +127,26 @@ class PeopleComponent extends Component{
         <div className="blue-yellow-bar"/>
 
         <div style={{display:"flex", flexWrap:"wrap", justifyContent:"center"}}>
-          <Carousel style={{margin:"50px", width:"400px"}}>
+          <Carousel className="my-carousel">
             {carousel_items}
           </Carousel>
 
           <div style={{padding:"50px", width:"600px"}}>
-            <p className="nominate-title">
-              Member Monday Nomination
-            </p>
+            <div style={{textAlign:"center"}}>
+              <p className="nominate-title">
+                Member Monday Nomination
+              </p>
+            </div>
             <p className="nominate-body">
               Every week a member of ACP is chosen to be recognized.
               Nominate one of your ACP friends to be the featured member
               this Monday on the Instagram!
             </p>
-            <button className="my-button my-button-animation" onClick={this.handleOpen}>
-              Nominate!
-            </button>
+            <div style={{textAlign:"center"}}>
+              <button className="my-button my-button-animation" onClick={this.handleOpen}>
+                Nominate!
+              </button>
+            </div>
           </div>
         </div>
       </div>
