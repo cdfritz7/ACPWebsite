@@ -17,7 +17,7 @@ class ApplyComponent extends Component{
           <p className="body-16pt" style={{paddingTop:"15px"}}>
             Apply to be an ACP general member. A general member is someone who
             identifies as an active participant in the org. This is a low time
-            commitment role and you can get as much out of it as you put in.
+            commitment role and you can get as much out of it as you put in. <br/><br/>
             The only general member requirements are to participate in our
             bi-monthy meetings and to buy a t-shirt (have one item of ACP merch)!
              The benefits are optional participation in service activities,

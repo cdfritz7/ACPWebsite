@@ -48,6 +48,7 @@ class ContactComponent extends Component{
                   Send!
                 </button>
               </form>
+              <br/>
             </div>
           </div>
         </div>

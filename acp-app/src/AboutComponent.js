@@ -35,9 +35,12 @@ class AboutComponent extends Component{
               <p className="text-24pt" >Our Story</p>
               <div className="blue-yellow-bar" />
             </div>
-            <p className="body-20pt about-body-row">
-            In September of 2019, two friends and UT students, Sophie Brandeis and Ian Mitre, were sitting in the PCL library. Instead of studying, they discussed how much of Austin goes unseen by the average UT student. This is where the idea of the Austin Conservation Project was born. They figured if they created an organization that provided students, like themselves, with a platform to engage with the city then they would be able to make a big impact in both their UT and Austin communities. Since September of 2019 the Austin Conservation Project has grown to over 100 members, all dedicated to learning, exploring and conserving all that Austin has to offer. Together, ACP has put on Lady Bird Lake cleanups, Shoal Creek trash pick ups, a concert fundraiser, local business promotions, a mini documentary series called: “Faces of Austin”, bonfire socials, Dirty Martin’s dinners and so much more.
-            </p>
+            <div className="body-20pt about-body-row">
+             <p>
+             In September of 2019, two friends and UT students, Sophie Brandeis and Ian Mitre, were sitting in the PCL library. Instead of studying, they discussed how much of Austin goes unseen by the average UT student. This is where the idea of the Austin Conservation Project was born. They figured if they created an organization that provided students, like themselves, with a platform to engage with the city then they would be able to make a big impact in both their UT and Austin communities. <br/></p>
+             <p>
+             Since then, the Austin Conservation Project has grown to over 100 members, all dedicated to learning, exploring and conserving all that Austin has to offer. Together, ACP has put on Lady Bird Lake cleanups, Shoal Creek trash pick ups, a concert fundraiser, local business promotions, a mini documentary series called: “Faces of Austin”, bonfire socials, Dirty Martin’s dinners and so much more.</p>
+             </div>
           </div>
         </div>
 
