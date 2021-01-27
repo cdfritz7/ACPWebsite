@@ -7,14 +7,11 @@ import { SocialIcon } from 'react-social-icons';
 class ContactComponent extends Component{
   render(){
     return(
-      <div style={{paddingBottom:"50px"}}>
+      <div className="contact-big-container">
         <p className="text-24pt page-title">
            Contact Us!
         </p>
-        <div className="blue-yellow-bar"/>
-        <p className="text-16pt" style={{textAlign:"center", paddingTop:"15px"}}>
-           Explore our social media, submit a message, or send us an email.
-        </p>
+        <div className="blue-yellow-bar-center"/>
 
         <div className="contact-container body-24pt">
           <div className="contact-column">

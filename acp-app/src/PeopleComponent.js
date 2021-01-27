@@ -52,7 +52,7 @@ class PeopleComponent extends Component{
         <p className="text-24pt page-title">
            Leadership Team
         </p>
-        <div className="blue-yellow-bar"/>
+        <div className="blue-yellow-bar-center"/>
         <div className="officer-container">
           <div className="officer-card">
             <img className="officer-img" src={require('./imgs/officers/presidents.JPG')['default']} />
@@ -124,7 +124,7 @@ class PeopleComponent extends Component{
         <p className="text-24pt page-title">
            Member Monday
         </p>
-        <div className="blue-yellow-bar"/>
+        <div className="blue-yellow-bar-center"/>
 
         <div style={{display:"flex", flexWrap:"wrap", justifyContent:"center"}}>
           <Carousel className="my-carousel">

@@ -3,6 +3,8 @@ import React, {Component} from "react"
 import best_leadership from './imgs/best_leadership.png';
 import best_new_organization from './imgs/best_new_organization.png';
 
+import "./css/About.css";
+
 class AwardComponent extends Component{
     constructor(props){
       super(props)
@@ -10,13 +12,10 @@ class AwardComponent extends Component{
 
     render(){
       return(
-        <div style={{width:"500px", marginRight:"50px", marginLeft:"50px", marginTop:"15px"}}>
-          <img src={this.props.img} style={{width:"500px"}} />
-          <p style={{padding:"20px", margin:"0px"}} className="text-24pt">
+        <div className="award-card">
+          <img src={this.props.img} className="award-card-img" />
+          <p className="text-20pt">
             {this.props.title}
-          </p>
-          <p className="body-16pt">
-            {this.props.text}
           </p>
         </div>
       )
@@ -26,42 +25,56 @@ class AwardComponent extends Component{
 class AboutComponent extends Component{
   render(){
     return(
-      <div style={{display:"grid", gridTemplateColumns:"100%", gridTemplateRows:"50px, 200px, 50px, 200px, 50px, auto", textAlign:"center"}}>
-
-        <div>
-          <div style={{gridRow:"1 / span 1", paddingTop:"100px", paddingBottom:"20px"}}>
-            <p className="text-24pt" >Our Story</p>
-            <div className="blue-yellow-bar" />
+      <div className="about-grid">
+        <div className="about-row-1">
+          <div className="about-icon about-icon-book">
+            <i class="fas fa-book fa-fw fa-10x"></i>
           </div>
-          <p className="body-20pt" style={{width:"75vw", margin: "auto", gridRow:"2 / span 1"}}>
-          In September of 2019, two friends and UT students, Sophie Brandeis and Ian Mitre, were sitting in the PCL library. Instead of studying, they discussed how much of Austin goes unseen by the average UT student. This is where the idea of the Austin Conservation Project was born. They figured if they created an organization that provided students, like themselves, with a platform to engage with the city then they would be able to make a big impact in both their UT and Austin communities. Since September of 2019 the Austin Conservation Project has grown to over 100 members, all dedicated to learning, exploring and conserving all that Austin has to offer. Together, ACP has put on Lady Bird Lake cleanups, Shoal Creek trash pick ups, a concert fundraiser, local business promotions, a mini documentary series called: “Faces of Austin”, bonfire socials, Dirty Martin’s dinners and so much more.
-          </p>
+          <div className="about-words-div">
+            <div className="about-title-row">
+              <p className="text-24pt" >Our Story</p>
+              <div className="blue-yellow-bar" />
+            </div>
+            <p className="body-20pt about-body-row">
+            In September of 2019, two friends and UT students, Sophie Brandeis and Ian Mitre, were sitting in the PCL library. Instead of studying, they discussed how much of Austin goes unseen by the average UT student. This is where the idea of the Austin Conservation Project was born. They figured if they created an organization that provided students, like themselves, with a platform to engage with the city then they would be able to make a big impact in both their UT and Austin communities. Since September of 2019 the Austin Conservation Project has grown to over 100 members, all dedicated to learning, exploring and conserving all that Austin has to offer. Together, ACP has put on Lady Bird Lake cleanups, Shoal Creek trash pick ups, a concert fundraiser, local business promotions, a mini documentary series called: “Faces of Austin”, bonfire socials, Dirty Martin’s dinners and so much more.
+            </p>
+          </div>
         </div>
 
-        <div>
-          <div style={{gridRow:"3 / span 1", paddingTop:"100px", paddingBottom:"20px"}}>
-            <p className="text-24pt">Mission Statement</p>
-            <div className="blue-yellow-bar" />
+        <div className="about-row-2">
+          <div className="about-icon about-icon-people">
+            <i class="fas fa-user-friends fa-fw fa-10x"></i>
           </div>
-          <p className="body-20pt" style={{width:"75vw", margin: "auto", gridRow:"4 / span 1"}}>
-          To provide a platform that brings like-minded and curious students together by offering opportunities to venture outside of the university bubble in order to learn, experience and uncover all that Austin has to offer.
-          </p>
+          <div className="about-words-div">
+            <div className="about-title-row">
+              <p className="text-24pt">Mission Statement</p>
+              <div className="blue-yellow-bar" />
+            </div>
+            <p className="body-20pt about-body-row">
+            To provide a platform that brings like-minded and curious students together by offering opportunities to venture outside of the university bubble in order to learn, experience and uncover all that Austin has to offer.
+            </p>
+          </div>
         </div>
 
-        <div>
-          <div style={{gridRow:"5 / span 1", paddingTop:"100px", paddingBottom:"20px"}} >
-            <p className="text-24pt" >Awards and Accolades</p>
-            <div className="blue-yellow-bar" />
+        <div className="about-row-3">
+          <div className="about-icon about-icon-trophy">
+            <i class="fas fa-trophy fa-fw fa-10x"></i>
           </div>
-          <div style={{gridRow:"6 / span 1", width: "80vw", margin:"auto", display:"flex", flexWrap:"wrap", justifyContent:"center"}}>
-            <AwardComponent
-              title="Swing Out Award"
-              img={best_new_organization}
+          <div className="about-words-div">
+            <div className="about-title-row">
+              <p className="text-24pt" >Awards and Accolades</p>
+              <div className="award-blue-yellow-bar" />
+            </div>
+            <div className="about-awards">
+              <AwardComponent
+                title="Swing Out Award"
+                img={best_new_organization}
+                />
+              <AwardComponent
+                title="Distinguished Leadership Award"
+                img={best_leadership}
               />
-            <AwardComponent
-              title="Distinguished Leadership Award"
-              img={best_leadership}
-            />
+            </div>
           </div>
         </div>
       </div>

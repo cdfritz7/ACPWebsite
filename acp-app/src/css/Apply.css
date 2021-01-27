@@ -1,3 +1,11 @@
+.committee-card-container{
+  margin:auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  width: 70%;
+}
+
 .committee-card{
   border-radius: 5px;
   border-width: 3px;
@@ -63,4 +71,44 @@ ul li::before {
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+@media only screen and (max-width: 1050px){
+  .committee-card-container{
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    width: 90vw;
+  }
+
+  .committee-card{
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: black;
+    width: 90vw;
+    padding: 40px;
+    margin: 30px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.16);
+  }
+
+  .committee-card-looking{
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-size: 18pt;
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 1;
+  }
+
+  .apply-button{
+    font-size:14pt;
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    align-self: start;
+    justify-self: left;
+  }
 }

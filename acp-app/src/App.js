@@ -32,15 +32,15 @@ function App() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav style={{width: "100%", margin:"auto"}}>
-            <div style={{display: "flex", width: "100%", alignItems:"center", justifyContent:"space-between"}}>
-                <Nav.Link className="my-nav-link text-24pt" style={{padding: "0px", color:"white"}} to="/" href="/"><img src={globe} width="60px" height="60px" alt="Home" /> ACP</Nav.Link>
+            <div className="my-navbar">
+                <Nav.Link className="my-nav-link text-24pt my-nav-logo" to="/" href="/"><img src={globe} width="60px" height="60px" alt="Home" /> ACP</Nav.Link>
               <div>
-                <Nav.Link className="my-nav-link text-16pt" style={{paddingRight: "2vw", display:"inline-block", color:"white"}} to="/about" href="/about">About</Nav.Link>
-                <Nav.Link className="my-nav-link text-16pt" style={{paddingRight: "2vw", display:"inline-block", color:"white"}} to="/contact" href="/contact">Contact</Nav.Link>
-                <Nav.Link className="my-nav-link text-16pt" style={{paddingRight: "2vw", display:"inline-block", color:"white"}} to="/apply" href="/apply">Apply</Nav.Link>
-                <Nav.Link className="my-nav-link text-16pt" style={{paddingRight: "2vw", display:"inline-block", color:"white"}} to="/faces" href="/faces">Faces</Nav.Link>
-                <Nav.Link className="my-nav-link text-16pt" style={{paddingRight: "2vw", display:"inline-block", color:"white"}} to="/people" href="/people">People</Nav.Link>
-                <Nav.Link className="my-nav-link text-16pt" style={{paddingRight: "2vw", display:"inline-block", color:"white"}} to="/events" href="/events">Events</Nav.Link>
+                <Nav.Link className="my-nav-link text-16pt my-nav-item" to="/about" href="/about">About</Nav.Link>
+                <Nav.Link className="my-nav-link text-16pt my-nav-item" to="/contact" href="/contact">Contact</Nav.Link>
+                <Nav.Link className="my-nav-link text-16pt my-nav-item" to="/apply" href="/apply">Apply</Nav.Link>
+                <Nav.Link className="my-nav-link text-16pt my-nav-item" to="/faces" href="/faces">Faces</Nav.Link>
+                <Nav.Link className="my-nav-link text-16pt my-nav-item" to="/people" href="/people">People</Nav.Link>
+                <Nav.Link className="my-nav-link text-16pt my-nav-item" to="/events" href="/events">Events</Nav.Link>
                 <SocialIcon network="spotify" url="https://open.spotify.com/playlist/7blqYsROEPAF9BskYRTFYG?si=oeELY4gxSleUMPR429CyIA" target="_blank" fgColor="#FFFFFF"/>
               </div>
             </div>
@@ -61,9 +61,9 @@ function App() {
             <p>Website designed by <a href="https://vidare.org" style={{color:"#FE8D3F"}} target="_blank">Vidare</a>, a 501(c)(3) nonprofit</p>
           </div>
           <div className="footer-right">
-            <SocialIcon className="my-social-icon" network="linkedin" fgColor="FFFFFF" target="_blank" url="https://www.linkedin.com/company/austin-conservation-project"/>
-            <SocialIcon className="my-social-icon" network="instagram" fgColor="FFFFFF" target="_blank" url="https://www.instagram.com/atx.conservation.project/"/>
-            <SocialIcon className="my-social-icon" network="bandsintown" fgColor="FFFFFF" bgColor="#ff5a01" target="_blank" url="https://utexas.campuslabs.com/engage/organization/austinconservationproject"/>
+            <SocialIcon className="my-social-icon" network="linkedin" fgColor="#FFFFFF" target="_blank" url="https://www.linkedin.com/company/austin-conservation-project"/>
+            <SocialIcon className="my-social-icon" network="instagram" fgColor="#FFFFFF" target="_blank" url="https://www.instagram.com/atx.conservation.project/"/>
+            <SocialIcon className="my-social-icon" network="bandsintown" fgColor="#FFFFFF" bgColor="#ff5a01" target="_blank" url="https://utexas.campuslabs.com/engage/organization/austinconservationproject"/>
           </div>
         </div>
       </BrowserRouter>

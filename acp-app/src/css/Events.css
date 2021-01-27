@@ -10,3 +10,22 @@
 .dot:hover{
   background-color: #32733d;
 }
+
+.events-container{
+  height:100vh;
+}
+
+.calendar{
+  margin:auto;
+  width:70vw;
+  padding-top: 80px;
+}
+
+@media only screen and (max-width: 750px){
+  .calendar{
+    margin:auto;
+    width:90vw;
+    padding-top: 80px;
+    font-size: 14pt;
+  }
+}

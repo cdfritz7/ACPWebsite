@@ -9,31 +9,22 @@ class ApplyComponent extends Component{
     return(
       <div>
 
-        <p className="text-24pt page-title">
-           Apply to ACP
-        </p>
-        <div className="blue-yellow-bar"/>
-        <p className="text-20pt centered-text" style={{textAlign:"center", paddingTop:"15px"}}>
-           Want to join ACP? You can browse available positions here and submit your
-           application!
-        </p>
-
-        <p className="text-24pt page-title">
-           General Member Application
-        </p>
-        <div className="blue-yellow-bar"/>
-        <p className="body-16pt centered-text" style={{paddingTop:"15px"}}>
-          Apply to be an ACP general member. A general member is someone who
-          identifies as an active participant in the org. This is a low time
-          commitment role and you can get as much out of it as you put in.
-          The only general member requirements are to participate in our
-          bi-monthy meetings and to buy a t-shirt (have one item of ACP merch)!
-           The benefits are optional participation in service activities,
-           social events, small business promotions and other fun ACP activities.
-           In order to be a committee member you MUST first apply as a general
-           member!
-        </p>
-        <div style={{textAlign:"center"}}>
+        <div className="centered-text">
+          <p className="text-24pt page-title">
+             General Member Application
+          </p>
+          <div className="blue-yellow-bar-center"/>
+          <p className="body-16pt" style={{paddingTop:"15px"}}>
+            Apply to be an ACP general member. A general member is someone who
+            identifies as an active participant in the org. This is a low time
+            commitment role and you can get as much out of it as you put in.
+            The only general member requirements are to participate in our
+            bi-monthy meetings and to buy a t-shirt (have one item of ACP merch)!
+             The benefits are optional participation in service activities,
+             social events, small business promotions and other fun ACP activities.
+             In order to be a committee member you MUST first apply as a general
+             member!
+          </p>
           <button
             className="my-button-md my-button-animation"
             onClick={()=>{window.open('https://docs.google.com/forms/d/e/1FAIpQLScSqmBs311pWC4NprsjYUofwgP-V2QQm6OejAF3QOKpzxfv5A/viewform?usp=sf_link')}}>
@@ -44,13 +35,13 @@ class ApplyComponent extends Component{
         <p className="text-24pt page-title">
            ACP Committees
         </p>
-        <div className="blue-yellow-bar"/>
+        <div className="blue-yellow-bar-center"/>
         <p className="body-16pt centered-text" style={{paddingTop:"15px"}}>
           Here at ACP we have five committees that work together cohesively to keep
           Austin, Austin!  To join a committee you must first apply to be a general
           member. Here are some brief descriptions of what our committees do.
         </p>
-        <div style={{margin:"auto", display:"flex", flexWrap:"wrap", justifyContent:"center", width: "70%"}}>
+        <div className="committee-card-container">
 
           <div className="committee-card">
             <div className="committee-card-title">

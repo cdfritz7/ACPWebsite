@@ -1,3 +1,10 @@
+.video-carousel{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content:center;
+  margin-bottom:250px;
+}
+
 .carousel-button{
   background-color: #018DA8; /* blue */
   border: none;
@@ -8,7 +15,17 @@
   display: inline-block;
   font-size: 32px;
   font-weight: 600;
-  border-radius: 50%;
+  border-radius: 50% !important;
+  margin:15px;
+  margin-top:350px;
+}
+
+.cb-left{
+  float:left;
+}
+
+.cb-right{
+  float:right;
 }
 
 .carousel-button:link {

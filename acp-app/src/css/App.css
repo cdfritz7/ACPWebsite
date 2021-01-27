@@ -106,10 +106,18 @@
   min-width:500px;
 }
 
-.blue-yellow-bar{
+.blue-yellow-bar-center{
   width:300px;
   height:5px;
   margin: auto;
+  background: linear-gradient(to right, #FE8D3F 50%, #018DA8 50% 100%);
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+.blue-yellow-bar{
+  width:300px;
+  height:5px;
   background: linear-gradient(to right, #FE8D3F 50%, #018DA8 50% 100%);
   margin-top:15px;
   margin-bottom:15px;
@@ -202,32 +210,89 @@
 }
 
 .footer{
-  min-height: 120px;
-  height:10vh;
   background-color: #015465; /*dark blue*/
   display: flex;
+  flex-wrap:wrap;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .footer-left{
   color:white;
-  margin-left: 10vw;
-  min-width: 300px;
+  margin-left: 2.5vw;
+  min-width: 150px;
   width: 20vw;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
-  text-align: center;
-  padding-top:20px;
+  text-align: left;
+  padding-top: 20px;
 }
 
 .footer-right{
   color:white;
-  margin-right:5vw;
+  margin:2.5vw;
   font-size: .5em;
+  min-width: 210px;
   font-family: 'Roboto', sans-serif;
 }
 
 .my-social-icon{
   margin-left:20px;
+  width:50px
+}
+
+/*media queries for smaller screen sizes*/
+@media only screen and (max-width: 900px){
+  .my-navbar{
+
+  }
+
+  .my-nav-item{
+    color:white !important;
+  }
+
+  .my-nav-logo{
+    color:white !important;
+  }
+}
+
+@media only screen and (min-width: 901px){
+  .my-navbar{
+    display: flex !important;
+    width: 100% !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+  }
+
+  .my-nav-item{
+    padding-right: 2vw !important;
+    display:inline-block !important;
+    color:white !important;
+  }
+
+  .my-nav-logo{
+    padding-right: 15px !important;
+    color: white !important;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  .footer{
+    background-color: #015465; /*dark blue*/
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-left{
+    color:white;
+    min-width: 150px;
+    width: 20vw;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+  }
 }

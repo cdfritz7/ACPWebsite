@@ -1,0 +1,119 @@
+.about-icon{
+  color: #FE8D3F;
+  display: inline-block;
+  margin: auto;
+  padding: 3em;
+}
+
+.about-icon-book{
+  color: #018DA8;
+}
+
+.about-icon-people{
+  color: #32733d;
+}
+
+.about-icon-trophy{
+  color: #FE8D3F;
+}
+
+.about-words-div{
+  padding: 3em;
+  display: inline-block;
+}
+
+.about-title-row{
+  padding-bottom:20px;
+}
+
+.about-body-row{
+}
+
+.about-grid{
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.about-row-1{
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  justify-content: space-around;
+  width: 85vw;
+  margin:auto;
+}
+
+.about-row-2{
+  grid-row: 2;
+  grid-column: 1;
+  display: flex;
+  justify-content: space-around;
+  width: 85vw;
+  margin:auto;
+}
+
+.about-row-3{
+  grid-row: 3;
+  width: 85vw;
+  margin:auto;
+}
+
+.about-awards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.award-card{
+  width: 400px;
+  margin-right:50px;
+  margin-top:15px;
+}
+
+.award-card-img{
+  max-width: 100%;
+  margin-bottom: 15px;
+  width: 400px;
+}
+
+.award-blue-yellow-bar{
+  width:300px;
+  height:5px;
+  background: linear-gradient(to right, #FE8D3F 50%, #018DA8 50% 100%);
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+/*media queries for small and medium screen sizes*/
+@media only screen and (max-width: 1080px) {
+  .about-icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1500px){
+  .about-icon-trophy{
+    display: none;
+  }
+
+  .about-row-3{
+    text-align: center;
+    margin: auto;
+  }
+
+  .award-card{
+    width: 400px;
+    margin-left: 50px;
+    margin-right:50px;
+    margin-top:15px;
+  }
+
+  .award-blue-yellow-bar{
+    width:300px;
+    height:5px;
+    background: linear-gradient(to right, #FE8D3F 50%, #018DA8 50% 100%);
+    margin-top:15px;
+    margin-bottom:15px;
+    margin:auto;
+  }
+}

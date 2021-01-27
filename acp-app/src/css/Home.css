@@ -1,3 +1,33 @@
+.splash-container{
+  height:100vh;
+  position:relative;
+}
+
+.splash-skyline{
+  opacity:0.5;
+  width:100vw;
+  max-width:100%;
+  position:absolute;
+  left:0;
+  bottom:-15vw;
+}
+
+.splash-logo{
+  width:40vw;
+  position:absolute;
+  top:30%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:1;
+}
+
+.home-body-text{
+  max-width:80vw;
+  margin:auto;
+  margin-top:15vw;
+  padding-bottom:20px;
+}
+
 .event-img-container{
   margin:auto;
   display:flex;
@@ -17,4 +47,31 @@
   max-width:80vw;
   margin:auto;
   padding-bottom:20px;
+}
+
+/*media queries for different phone sizes*/
+@media only screen and (max-width: 750px){
+  .splash-skyline{
+    opacity:0.5;
+    width:100vw;
+    max-width:100%;
+    position:absolute;
+    left:0;
+    bottom:0;
+  }
+
+  .splash-logo{
+    width:80vw;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index:1;
+  }
+
+  .home-body-text{
+    max-width:80vw;
+    margin:auto;
+    padding-bottom:20px;
+  }
 }

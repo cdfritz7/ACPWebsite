@@ -92,15 +92,10 @@ class VideoCarousel extends Component{
 
   render(){
     return(
-      <div style={{display: "grid",
-                  gridTemplateColumns: "1fr 1fr 1fr",
-                  justifyContent:"center"
-                }}>
-
+      <div className="video-carousel">
         <div>
           <button
-          className="carousel-button my-button-animation"
-          style={{float:"right", margin:"15px", marginTop:"350px", borderRadius:"50%"}}
+          className="carousel-button my-button-animation cb-right"
           onClick={()=>{this.decrement_index()}}>
             &#60;
           </button>
@@ -114,8 +109,7 @@ class VideoCarousel extends Component{
 
         <div>
           <button
-          className="carousel-button my-button-animation "
-          style={{float:"left", margin:"15px", marginTop:"350px", borderRadius:"50%"}}
+          className="carousel-button my-button-animation cb-left"
           onClick={()=>{this.increment_index()}}>
             &#62;
           </button>
@@ -132,14 +126,14 @@ class FacesComponent extends Component{
         <p className="text-24pt page-title">
            Faces of Austin
         </p>
-        <div className="blue-yellow-bar"/>
+        <div className="blue-yellow-bar-center"/>
         <p className="body-20pt centered-text" style={{marginBottom:"50px", paddingTop:"15px"}}>
            Faces of Austin is a mini documentary series put on by ACP members
            that spotlights different local businesses and the people working
            there around Austin. Check out some of our latest features!
         </p>
 
-        <VideoCarousel style={{marginBottom:"250px"}}/>
+        <VideoCarousel />
       </div>
     )
   }

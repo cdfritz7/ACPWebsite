@@ -71,8 +71,7 @@ class EventTicker extends Component{
                    <Tooltip id="button-tooltip" style={{fontSize:"16pt"}}>
                      {this.props.event.name}
                    </Tooltip>
-                 }
-        >
+                 }>
           <div className="dot" onClick={()=>this.handleOpen(this.props.event)}>
           </div>
         </OverlayTrigger>
@@ -130,19 +129,12 @@ class EventsComponent extends Component{
 
   render(){
     return(
-      <div>
-        <p className="text-24pt page-title">
-           Events
-        </p>
-        <div className="blue-yellow-bar"/>
+      <div className="events-container">
         <Calendar
-          style={{margin:"auto"}}
+          className="calendar"
           tileContent={({ activeStartDate, date, view }) => this.isEventDate(date)}
           onDrillDown={({ activeStartDate, view }) => null}
           onDrillUp={({ activeStartDate, view })=>null}/>
-        <div style={{height:"20vh"}}>
-
-        </div>
       </div>
     )
   }
