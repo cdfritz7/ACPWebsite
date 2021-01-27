@@ -7,12 +7,10 @@ import data from './content_json/faces_of_austin.json';
 class that holds data for the faces of austin videos
 */
 class FacesVideo{
-  constructor(link, title, intro, caption1, caption2){
+  constructor(link, title, caption){
     this.link = link;
     this.title = title;
-    this.intro = intro;
-    this.caption1 = caption1;
-    this.caption2 = caption2;
+    this.caption = caption;
   }
 }
 
@@ -36,9 +34,7 @@ class VideoCard extends Component {
           src={this.props.link}>
         </iframe>
         <p className="video-card-caption">
-          <div>{this.props.intro}</div>
-          <div>{this.props.caption1}</div>
-          <div>{this.props.caption2}</div>
+          {this.props.caption}
         </p>
       </div>
     )
@@ -63,10 +59,8 @@ class VideoCarousel extends Component{
     for(var i = 0; i < data.length; i++){
       let link = data[i].link;
       let title = data[i].title;
-      let intro = data[i].intro;
-      let caption1 = data[i].caption1;
-      let caption2 = data[i].caption2;
-      var my_video = new FacesVideo(link, title, intro, caption1, caption2)
+      let caption = data[i].caption;
+      var my_video = new FacesVideo(link, title, caption)
       this.videos.push(my_video)
     }
 
@@ -110,9 +104,7 @@ class VideoCarousel extends Component{
         <VideoCard
           title={this.videos[this.state.index].title}
           link={this.videos[this.state.index].link}
-          intro={this.videos[this.state.index].intro}
-          caption1={this.videos[this.state.index].caption1}
-          caption2={this.videos[this.state.index].caption2}
+          caption={this.videos[this.state.index].caption}
         />
 
         <div>
