@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.fcf69cf2.chunk.css",
-    "main.js": "/static/js/main.a736ceea.chunk.js",
-    "main.js.map": "/static/js/main.a736ceea.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.27de9197.js",
-    "runtime-main.js.map": "/static/js/runtime-main.27de9197.js.map",
+    "main.css": "/static/css/main.08a62baa.chunk.css",
+    "main.js": "/static/js/main.bd16a845.chunk.js",
+    "main.js.map": "/static/js/main.bd16a845.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.610c561c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.610c561c.js.map",
     "static/css/2.1a02f21c.chunk.css": "/static/css/2.1a02f21c.chunk.css",
-    "static/js/2.e4a31810.chunk.js": "/static/js/2.e4a31810.chunk.js",
-    "static/js/2.e4a31810.chunk.js.map": "/static/js/2.e4a31810.chunk.js.map",
-    "static/js/3.3c077598.chunk.js": "/static/js/3.3c077598.chunk.js",
-    "static/js/3.3c077598.chunk.js.map": "/static/js/3.3c077598.chunk.js.map",
+    "static/js/2.79584f86.chunk.js": "/static/js/2.79584f86.chunk.js",
+    "static/js/2.79584f86.chunk.js.map": "/static/js/2.79584f86.chunk.js.map",
+    "static/js/3.118ab126.chunk.js": "/static/js/3.118ab126.chunk.js",
+    "static/js/3.118ab126.chunk.js.map": "/static/js/3.118ab126.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.1a02f21c.chunk.css.map": "/static/css/2.1a02f21c.chunk.css.map",
-    "static/css/main.fcf69cf2.chunk.css.map": "/static/css/main.fcf69cf2.chunk.css.map",
-    "static/js/2.e4a31810.chunk.js.LICENSE.txt": "/static/js/2.e4a31810.chunk.js.LICENSE.txt",
+    "static/css/main.08a62baa.chunk.css.map": "/static/css/main.08a62baa.chunk.css.map",
+    "static/js/2.79584f86.chunk.js.LICENSE.txt": "/static/js/2.79584f86.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/CocogoosePro-ThinItalic.ec1da440.woff2",
     "static/media/IMG-0001.JPG": "/static/media/IMG-0001.99912623.JPG",
     "static/media/IMG-0003.JPG": "/static/media/IMG-0003.9821e40e.JPG",
@@ -57,10 +57,10 @@
     "static/media/thomas_pastilha.JPG": "/static/media/thomas_pastilha.1fcdfcef.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.27de9197.js",
+    "static/js/runtime-main.610c561c.js",
     "static/css/2.1a02f21c.chunk.css",
-    "static/js/2.e4a31810.chunk.js",
-    "static/css/main.fcf69cf2.chunk.css",
-    "static/js/main.a736ceea.chunk.js"
+    "static/js/2.79584f86.chunk.js",
+    "static/css/main.08a62baa.chunk.css",
+    "static/js/main.bd16a845.chunk.js"
   ]
 }
