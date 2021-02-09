@@ -31,6 +31,7 @@
 }
 
 .about-grid{
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 100%;
 }
