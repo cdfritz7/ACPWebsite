@@ -55,11 +55,14 @@ class EventTicker extends Component{
   render(){
     return(
       <div style={{display:"inline-block"}}>
+        {/* Modal/pop-up that happens when you click one of the events on the events page */}
         <Modal className="nominate-modal" size="lg" show={this.state.show_modal} onHide={this.handleClose} centered>
           <Modal.Header className="body-24pt" closeButton>
+            {/* Modal/pop-up title */}
             <Modal.Title>{this.props.event.name}</Modal.Title>
           </Modal.Header>
           <Modal.Body className="body-16pt">
+            {/* Modal/pop-up description*/}
             {this.props.event.description}
           </Modal.Body>
         </Modal>
@@ -69,10 +72,12 @@ class EventTicker extends Component{
           delay={{ show: 100, hide: 0 }}
           overlay={
                    <Tooltip id="button-tooltip" style={{fontSize:"16pt"}}>
+                     {/* Shows the event's name when clicked */}
                      {this.props.event.name}
                    </Tooltip>
                  }>
           <div className="dot" onClick={()=>this.handleOpen(this.props.event)}>
+            {/* Dot that shows up on a day with an event */}
           </div>
         </OverlayTrigger>
       </div>
@@ -130,7 +135,9 @@ class EventsComponent extends Component{
   render(){
     return(
       <div className="events-container">
+        {/* Calendar for the events page */}
         <Calendar
+        
           className="calendar"
           tileContent={({ activeStartDate, date, view }) => this.isEventDate(date)}
           onDrillDown={({ activeStartDate, view }) => null}

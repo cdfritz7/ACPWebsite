@@ -1,4 +1,5 @@
-.about-icon{
+.about-icon{ 
+  /* Affects all about icons */
   color: #FE8D3F;
   display: inline-block;
   margin: auto;
@@ -6,14 +7,18 @@
 }
 
 .about-icon-book{
+  /* icon for "Our Story" section */
   color: #018DA8;
 }
 
 .about-icon-people{
+  /* icon for "Mission Statement" section */
   color: #32733d;
 }
 
 .about-icon-trophy{
+  /* icon for "Awards and Accolades" section */
+  
   color: #FE8D3F;
 }
 
@@ -86,6 +91,7 @@
   margin-bottom:15px;
 }
 
+/* Changes the format based on the size of the screen*/
 /*media queries for small and medium screen sizes*/
 @media only screen and (max-width: 1080px) {
   .about-icon {

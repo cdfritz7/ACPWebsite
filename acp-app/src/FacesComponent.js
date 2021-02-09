@@ -29,13 +29,17 @@ class VideoCard extends Component {
   render(){
     return(
       <div className="video-card">
+        {/* Container for Faces of Austin */}
         <p className="video-card-title">
+          {/* Faces of Austin Title */}
           {this.props.title}
         </p>
         <iframe className="video-card-video"
           src={this.props.link}>
+            {/* Embedded youtube video */}
         </iframe>
         <p className="video-card-caption">
+          {/* Captions for Faces of austin*/}
           <div>{this.props.intro}</div>
           <div>{this.props.caption1}</div>
           <div>{this.props.caption2}</div>
@@ -129,9 +133,11 @@ class VideoCarousel extends Component{
 
 class FacesComponent extends Component{
   render(){
-    return(
+    // Title and Description of Faces of Austin
+    return(      
       <div>
         <p className="text-24pt page-title">
+          
            Faces of Austin
         </p>
         <div className="blue-yellow-bar-center"/>

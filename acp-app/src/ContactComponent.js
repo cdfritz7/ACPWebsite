@@ -16,6 +16,7 @@ class ContactComponent extends Component{
         <div className="contact-container body-24pt">
           <div className="contact-column">
             <div>
+              {/* Social Links change only the "href" attribute if changing the link */}
               <p className="contact-method"><SocialIcon network="linkedin" />  <a target="_blank" href="https://www.linkedin.com/company/austin-conservation-project">LinkedIn</a> </p>
               <p className="contact-method"><SocialIcon network="bandsintown" bgColor="#ff5a01"/> <a target="_blank" href="https://utexas.campuslabs.com/engage/organization/austinconservationproject">HornsLink</a> </p>
               <p className="contact-method"><SocialIcon network="instagram" /> <a target="_blank" href="https://www.instagram.com/atx.conservation.project/">Instagram</a> </p>
@@ -24,6 +25,7 @@ class ContactComponent extends Component{
           </div>
 
           <div className="contact-column">
+            {/* Form for contacting ACP */}
             <div>
               <form
               action="https://formsubmit.co/austinconservationproject@gmail.com"

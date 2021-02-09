@@ -23,11 +23,13 @@ import { SocialIcon } from 'react-social-icons';
 import "./css/App.css";
 
 import globe from './imgs/ACP-Globe.png';
-
+//  This file makes the Navbar and footer across all of the pages
 function App() {
   return (
     <div className="App">
+      
       <BrowserRouter basename = "/">
+        
         <Navbar expand="lg" style={{backgroundColor: "#018DA8"}} sticky='top'>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -35,6 +37,7 @@ function App() {
             <div className="my-navbar">
                 <Nav.Link className="my-nav-link text-24pt my-nav-logo" to="/" href="/"><img src={globe} width="60px" height="60px" alt="Home" /> ACP</Nav.Link>
               <div>
+                {/* Links in Nav to the different pages. If you want to change the title, change the text within the Nav.Link tags e.g.: <Nav.Link> ** TITLE TO CHANGE ** </Nav.Link>*/}
                 <Nav.Link className="my-nav-link text-16pt my-nav-item" to="/about" href="/about">About</Nav.Link>
                 <Nav.Link className="my-nav-link text-16pt my-nav-item" to="/contact" href="/contact">Contact</Nav.Link>
                 <Nav.Link className="my-nav-link text-16pt my-nav-item" to="/apply" href="/apply">Apply</Nav.Link>
@@ -55,12 +58,13 @@ function App() {
         <Route path="/faces" component={FacesComponent} />
         <Route path="/people" component={PeopleComponent} />
         <Route path="/events" component={EventsComponent} />
-
+        {/* Footer for all pages */}
         <div className="footer">
           <div className="footer-left">
             <p>Website designed by <a href="https://vidare.org" style={{color:"#FE8D3F"}} target="_blank">Vidare</a>, a 501(c)(3) nonprofit</p>
           </div>
           <div className="footer-right">
+            {/* Links to social media networks */}
             <SocialIcon className="my-social-icon" network="linkedin" fgColor="#FFFFFF" target="_blank" url="https://www.linkedin.com/company/austin-conservation-project"/>
             <SocialIcon className="my-social-icon" network="instagram" fgColor="#FFFFFF" target="_blank" url="https://www.instagram.com/atx.conservation.project/"/>
             <SocialIcon className="my-social-icon" network="bandsintown" fgColor="#FFFFFF" bgColor="#ff5a01" target="_blank" url="https://utexas.campuslabs.com/engage/organization/austinconservationproject"/>

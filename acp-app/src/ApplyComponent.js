@@ -13,7 +13,9 @@ class ApplyComponent extends Component{
           <p className="text-24pt page-title">
              General Member Application
           </p>
+          {/* Page divider */}
           <div className="blue-yellow-bar-center"/>
+          {/* Container for page description text */}
           <p className="body-16pt" style={{paddingTop:"15px"}}>
             Apply to be an ACP general member. A general member is someone who
             identifies as an active participant in the org. This is a low time
@@ -28,6 +30,7 @@ class ApplyComponent extends Component{
           <button
             className="my-button-md my-button-animation"
             onClick={()=>{window.open('https://docs.google.com/forms/d/e/1FAIpQLScSqmBs311pWC4NprsjYUofwgP-V2QQm6OejAF3QOKpzxfv5A/viewform?usp=sf_link')}}>
+            {/* Apply Button */}
             Apply!
           </button>
         </div>
@@ -35,19 +38,25 @@ class ApplyComponent extends Component{
         <p className="text-24pt page-title">
            ACP Committees
         </p>
+
         <div className="blue-yellow-bar-center"/>
         <p className="body-16pt centered-text" style={{paddingTop:"15px"}}>
           Here at ACP we have five committees that work together cohesively to keep
           Austin, Austin!  To join a committee you must first apply to be a general
           member. Here are some brief descriptions of what our committees do.
         </p>
-        <div className="committee-card-container">
 
+        {/* Container for committee Positions */}
+        <div className="committee-card-container">
+          
           <div className="committee-card">
+            {/* Card */}
             <div className="committee-card-title">
+              {/* Card Name */}
               President
             </div>
             <div className="committee-card-body">
+              {/* Card Description */}
               President: Serving as the president or co-presidents of ACP is a big job,
               but also an exciting one. As the president of the Austin
               Conservation Project you have the platform and therefore the
@@ -68,6 +77,7 @@ class ApplyComponent extends Component{
             </div>
 
             <div className="apply-button">
+              {/* Apply button */}
               <button
                 className="my-button-sm my-button-animation"
                 onClick={()=>{window.open('https://docs.google.com/forms/d/e/1FAIpQLSfHRYC7KZO8bUpifuhGHttLF9bnx3lk09VvwkZVhUm-QWMYPg/viewform')}}>

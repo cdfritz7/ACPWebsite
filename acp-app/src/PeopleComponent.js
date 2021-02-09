@@ -23,10 +23,11 @@ class PeopleComponent extends Component{
     this.handleOpen = this.handleOpen.bind(this);
   }
 
-  handleClose(){
+  // Closes the component
+  handleClose(){ 
     this.setState({show:false})
   }
-
+  // Opens the component
   handleOpen(){
     this.setState({show:true})
   }
@@ -35,7 +36,7 @@ class PeopleComponent extends Component{
 
     //item to hold the images that will be displayed in the carousel
     var carousel_items = [];
-    for(var i = 0; i < member_monday_images.length; i++){
+    for(var i = 0; i < member_monday_images.length; i++){ //Grabs each image from member monday folder for a carousel slide
       carousel_items.push(
         <Carousel.Item>
           <img
@@ -46,16 +47,21 @@ class PeopleComponent extends Component{
         </Carousel.Item>,
       )
     }
-
+    // Shows the photos of all of the team Members
     return(
       <div>
+        {/* Title */}
         <p className="text-24pt page-title">
            Leadership Team
         </p>
         <div className="blue-yellow-bar-center"/>
+        {/* Container for Cards */}
         <div className="officer-container">
+          {/* Card */}
           <div className="officer-card">
-            <img className="officer-img" src={require('./imgs/officers/presidents.JPG')['default']} />
+            {/* Image for Card  */}
+            <img className="officer-img" src={require('./imgs/officers/presidents.JPG')['default']} /> 
+            {/* Text content for Card */}
             <p className="text-20pt">Sophie and Ian Mitre, Co-Founders and Presidents</p>
           </div>
           <div className="officer-card">
@@ -83,12 +89,14 @@ class PeopleComponent extends Component{
             <p className="text-20pt">Elaine Finney, Philanthropy</p>
           </div>
         </div>
-
+        {/* Pop-up for when Nominate button is clicked */}
         <Modal className="nominate-modal" size="lg" show={this.state.show} onHide={this.handleClose} centered>
           <Modal.Header className="text-24pt" closeButton>
+            {/* Pop-up Title*/}
             <Modal.Title>Nominate for Member Monday</Modal.Title>
           </Modal.Header>
           <Modal.Body className="body-16pt">
+            {/* Fields for Nomination information */}
             <form
             action="https://formsubmit.co/austinconservationproject@gmail.com"
             method="POST">
@@ -120,17 +128,17 @@ class PeopleComponent extends Component{
             </form>
           </Modal.Body>
         </Modal>
-
+        {/* Page divider for Member Monday */}
         <p className="text-24pt page-title">
            Member Monday
         </p>
         <div className="blue-yellow-bar-center"/>
-
+        {/* Carousel for Member monday */}
         <div style={{display:"flex", flexWrap:"wrap", justifyContent:"center"}}>
           <Carousel className="my-carousel">
             {carousel_items}
           </Carousel>
-
+          {/* Member Monday Nomination title and content */}
           <div style={{padding:"50px", width:"600px"}}>
             <div style={{textAlign:"center"}}>
               <p className="nominate-title">
@@ -143,6 +151,7 @@ class PeopleComponent extends Component{
               this Monday on the Instagram!
             </p>
             <div style={{textAlign:"center"}}>
+              {/* Nominate button that brings up Modal/pop-up mentioned earlier */}
               <button className="my-button my-button-animation" onClick={this.handleOpen}>
                 Nominate!
               </button>

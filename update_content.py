@@ -2,6 +2,8 @@ import csv
 import json
 
 '''
+PLEASE Note: you will not actually update the content within this file. This file simply runs a script to update the content itself.
+To update the content, update the files in "content_csv"
 converts the contents of a csv file to a json file that can be used by the 
 website
 '''
