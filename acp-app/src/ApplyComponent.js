@@ -7,7 +7,7 @@ class ApplyComponent extends Component{
   render(){
 
     return(
-      <div>
+      <div className="apply-body">
 
         <div className="centered-text">
           <p className="text-24pt page-title">
