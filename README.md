@@ -1,8 +1,11 @@
 
+
 ## Austin Conservation Project Website
 
 This project contains the website created for the Austin Conservation Project, hosted on
 AWS at austinconservationproject.org.
+
+This project was built by the 501c3 nonprofit [Vidare](https://vidare.org/)
 
 ### What is needed
 This project is built using React, a javascript library. It also requires npm to run. Python3 will also be required to make changes to the more dynamic parts of the website.
@@ -12,7 +15,47 @@ You can learn about Python3 [here](https://docs.python.org/3/tutorial/appetite.h
 
 When developing this project, we used git and github to keep track of different project versions.
 [Here](https://medium.com/the-underdog-writing-project/introduction-to-git-and-github-a5fdf5633923) is a brief introduction to git and github.
-A version control system isn't necessary to change and deploy the website. However, it's useful when more than one person is working on the website.
+A version control system isn't necessary to change and deploy the website. However, it's useful when more than one person is working on the website, or when you want to save your changes somewhere safe.
+
+### Starting From Zero on MacOS
+Follow this process to install all the necessary software to download and run the website on your local machine. These commands are for a specific user, but can be adapted for others.
+
+1. Create a github account at github.com, and request access to the project
+2. Open the terminal program - this comes standard on MacOS
+3. Brew is a package manager for MacOS that lets you easily install new software. Install [brew](https://brew.sh/) by pasting the following command (excluding the \$) in the terminal then pressing enter.
+```$/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
+4. Type the following command in the terminal to install git (always exclude the \$)
+```$brew install git```
+5. Type the following command in the terminal to install node (which contains npm) and python3
+```$brew install node python3```
+6. Type the following command to change into the 'Desktop/ACP Stuff'
+```$cd "Desktop/ACP Stuff"```
+7. Download this project using git
+```$git clone https://github.com/cdfritz7/ACPWebsite```
+8. Change into the newly downloaded folder 'ACPWebsite'
+```$cd ACPWebsite```
+9. Change into the 'acp-app' folder, which contains the code for the project
+```$cd acp-app```
+10. Use npm to run the code, this should open up a browser window with the website pulled up
+```$npm start```
+
+ ### Common Commands for Unix (MacOS) and Linux Systems
+ Use the following commands to navigate your computer's file system while in the terminal
+
+ Think of the file system like an upside tree - you start at the 'root' and each new folder is a 'branch' that contains other folders (other 'branches') or files ('leaves')
+
+ Folders are also called 'directories'
+ The <> symbols indicate parts of the command you should replace
+
+ ```$cd <folder-name>``` : **change directory** - change into the directory called folder-name
+        - Again, think of directories like an upside down tree,
+        - ```./``` is the directory you are currently 'in'
+        - ```../``` is the directory 'above' you, so you'd use ```$cd ..``` to move up one directory
+        - ```~/``` is the 'root' directory, so you'd use ```$cd ~``` to change to the root directory, which probably contains directories like 'Desktop' and 'Downloads'
+
+```$ls``` : **list** - list all the files and directories contained by the directory you are currently in
+
+```$pwd``` : **print working directory** - print the name of the directory you are currently in
 
 ### How Everything Works and Project Structure
 #### How React Works
@@ -66,6 +109,14 @@ The base of this website is the index.html document. This is what AWS sends to u
 3. Run ```update_content.py``` with a command such as  ```$python3 update_content.py``` or a python IDE
 4. Your changes should be reflected in the next build. If using the development website on localhost:3000, you may need to rerun ```$npm start```
 
+#### Uploading New Member Monday Pictures
+ 1. Simply put the pictures in ```./acp-app/src/imgs/member_monday/``` folder
+ 2. The website will pull the images from this folder on deploy to populate the Member Monday carousel
+
+#### Uploading New Pictures to the Front Page
+1. Simply put the new pictures in ```./acp-app/src/imgs/front_page_imgs/``` folder
+2. The website will pull the images from this folder on deploy to populate the front page
+
 #### Anything Else
 Changing anything else will require editing the javascript and css files in ```./acp-app/src/```. For instance, if you wanted to change the a paragraph on the about page, you would do the following.
 1. Open ```./acp-app/src/AboutComponent.js``` in a text editor or IDE
@@ -108,3 +159,12 @@ $npm run build
 3. Click the ```upload``` button on the right
 4. Upload ALL of the files and directories from the ```./acp-app/build``` directory
 5. Wait for a few minutes, any new changes should be reflected on the website
+
+### Uploading Your Changes to Github
+1. Change to the ```ACPWebsite``` directory, which contains the ```acp-app``` website
+2. Type the following command in the terminal to 'stage' your changes to be uploaded
+```$git add .```
+3. Type the following command in the terminal to 'commit' your changes with a message
+```$git commit -m "your-message-here"```
+4. Upload your changes to github.com
+```$git push```

@@ -60,6 +60,10 @@
   justify-self: right;
 }
 
+.apply-body{
+  margin-bottom: 30px;
+}
+
 ul {
   list-style: none; /* Remove default bullets */
 }
