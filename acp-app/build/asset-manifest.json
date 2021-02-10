@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.08a62baa.chunk.css",
-    "main.js": "/static/js/main.bd16a845.chunk.js",
-    "main.js.map": "/static/js/main.bd16a845.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.610c561c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.610c561c.js.map",
+    "main.js": "/static/js/main.1acbfaf1.chunk.js",
+    "main.js.map": "/static/js/main.1acbfaf1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ebe32444.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ebe32444.js.map",
     "static/css/2.1a02f21c.chunk.css": "/static/css/2.1a02f21c.chunk.css",
-    "static/js/2.79584f86.chunk.js": "/static/js/2.79584f86.chunk.js",
-    "static/js/2.79584f86.chunk.js.map": "/static/js/2.79584f86.chunk.js.map",
-    "static/js/3.118ab126.chunk.js": "/static/js/3.118ab126.chunk.js",
-    "static/js/3.118ab126.chunk.js.map": "/static/js/3.118ab126.chunk.js.map",
+    "static/js/2.c6b39e6c.chunk.js": "/static/js/2.c6b39e6c.chunk.js",
+    "static/js/2.c6b39e6c.chunk.js.map": "/static/js/2.c6b39e6c.chunk.js.map",
+    "static/js/3.0a857d0d.chunk.js": "/static/js/3.0a857d0d.chunk.js",
+    "static/js/3.0a857d0d.chunk.js.map": "/static/js/3.0a857d0d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.1a02f21c.chunk.css.map": "/static/css/2.1a02f21c.chunk.css.map",
     "static/css/main.08a62baa.chunk.css.map": "/static/css/main.08a62baa.chunk.css.map",
-    "static/js/2.79584f86.chunk.js.LICENSE.txt": "/static/js/2.79584f86.chunk.js.LICENSE.txt",
+    "static/js/2.c6b39e6c.chunk.js.LICENSE.txt": "/static/js/2.c6b39e6c.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/CocogoosePro-ThinItalic.ec1da440.woff2",
     "static/media/IMG-0001.JPG": "/static/media/IMG-0001.99912623.JPG",
     "static/media/IMG-0003.JPG": "/static/media/IMG-0003.9821e40e.JPG",
@@ -44,6 +44,8 @@
     "static/media/IMG-0051.JPG": "/static/media/IMG-0051.b5e7ce3f.JPG",
     "static/media/IMG-0052.JPG": "/static/media/IMG-0052.1aea6064.JPG",
     "static/media/IMG-0053.JPG": "/static/media/IMG-0053.bcae5879.JPG",
+    "static/media/IMG_2417.JPG": "/static/media/IMG_2417.c72fe1d4.JPG",
+    "static/media/IMG_2418.JPG": "/static/media/IMG_2418.2e0a0251.JPG",
     "static/media/best_leadership.ac4a5d93.png": "/static/media/best_leadership.ac4a5d93.png",
     "static/media/best_new_organization.0add1d61.png": "/static/media/best_new_organization.0add1d61.png",
     "static/media/cecilia_bibbo.JPG": "/static/media/cecilia_bibbo.1ddc2c8e.JPG",
@@ -57,10 +59,10 @@
     "static/media/thomas_pastilha.JPG": "/static/media/thomas_pastilha.1fcdfcef.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.610c561c.js",
+    "static/js/runtime-main.ebe32444.js",
     "static/css/2.1a02f21c.chunk.css",
-    "static/js/2.79584f86.chunk.js",
+    "static/js/2.c6b39e6c.chunk.js",
     "static/css/main.08a62baa.chunk.css",
-    "static/js/main.bd16a845.chunk.js"
+    "static/js/main.1acbfaf1.chunk.js"
   ]
 }
